@@ -1,39 +1,72 @@
-# mv
+# vue 移动端base
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+基于**VantUI**的 Vue 移动站点工程,使用 vue-cli V4 构建。
 
-#### 软件架构
-软件架构说明
+## 默认配置
+1. px转rem,可以直接根据设计图使用px单位愉快的构建页面
+2. 全量引入vantUI组件库,页面直接使用
+3. 引入less,支持全局自定义主题配色
+4. 引入axios工具,全局数据拦截
+
+## 兼容性
+支持所有的现代浏览器和 IE9+
+
+## 技术栈
+- vue-cli v4
+- vuejs 
+- vue-router
+- vuex
+- [Vant](https://youzan.github.io/vant/#/zh-CN/home)
+- less
+- [axios](https://github.com/axios/axios)
+
+## 项目命令
+
+### 安装依赖
+```
+npm install
+```
+
+### 开发热加载运行
+```
+npm run serve
+或
+npm run devs
+```
+
+### 测试编译打包
+```
+npm run build:test
+```
+
+### 编译打包
+```
+npm run build
+```
+
+### Vue CLI v4 配置参考
+See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-#### 安装教程
+## 项目目录结构
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+```
+├─config --------------- // 项目基础配置目录 [px to rem] 
+├─public --------------- // 项目渲染页面目录
+├─src 
+│  ├─assets ------------- // 静态资源目录
+│  ├─components --------- // 业务组件目录
+│  ├─helper ------------- // 业务工具目录
+│  ├─router ------------- // 路由目录
+│  ├─store -------------- // Vuex 状态管理目录
+│  ├─utils -------------- // 项目工具文件目录
+│  ├─views -------------- // 页面视图目录
+│  ├─App.vue ------------ // 项目根节点
+│  └─main.js ------------ // 项目入口
+├─.browserslistrc ------ // 目标浏览器配置
+├─.eslintrc.js --------- // eslint 配置文件
+├─.gitignore ----------- // git 过滤规则
+└─babel.config.js ------ // babel的配置
 
-#### 使用说明
+```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
